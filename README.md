@@ -10,7 +10,7 @@ I use git submodules to manage packages and pull them in using (pathogen.vim)[ht
 
 If you already have a .vimrc but you want to symlink it (I recommend that for ease of backup), you will need to run this first:
 
-`  mv ~/.vimrc ~/.vim/vimrc
+`mv ~/.vimrc ~/.vim/vimrc`
 
 To install, run these:
 
@@ -36,7 +36,7 @@ Plugins are managed as git submodules and pulled in using pathogen. To add a plu
 
 Since all plugins are brought in via git submodules, it is super easy to upgrade. Simply run this:
 
-`  git submodule foreach git pull origin master
+`git submodule foreach git pull origin master`
 
 ## Removing plugins
 ```

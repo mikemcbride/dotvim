@@ -1,7 +1,6 @@
 if filereadable(expand('~/src/vim/bundle/vim-pathogen/autoload/pathogen.vim'))
   source ~/src/vim/bundle/vim-pathogen/autoload/pathogen.vim
 endif
-silent! execute pathogen#infect("~/.vim/vendor/{}")
 silent! execute pathogen#infect("~/.vim/bundle/{}")
 
 syntax enable
@@ -26,18 +25,6 @@ set visualbell
 set title
 set undofile
 set undodir=~/.vim/undodir
-
-
-"make gvim look like vim in a terminal
-set guioptions+=c
-set guioptions+=R
-set guioptions-=m
-set guioptions-=r
-set guioptions-=b
-set guioptions-=T
-set guioptions-=R
-set guioptions-=L
-set guioptions-=e
 
 set autoindent
 set cindent
@@ -122,7 +109,3 @@ autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
 autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 autocmd FileType ruby setlocal omnifunc=rubycomplete#Complete
-
-
-let g:syntastic_enable_highlighting = 0
-let g:syntastic_html_tidy_ignore_errors=[" proprietary attribute \"ng-"]

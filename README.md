@@ -6,7 +6,7 @@ These are my .vim files. I like them. You can use them if you want to.
 
 This needs to be setup in your home directory, and a symlink needs to be made to make .vimrc point to the vimrc file inside of .vim
 
-I use git submodules to manage packages and pull them in using (pathogen.vim)[http://github.com/tpope/vim-pathogen]
+I use git submodules to manage packages and pull them in using [pathogen.vim](http://github.com/tpope/vim-pathogen)
 
 If you already have a .vimrc but you want to symlink it (I recommend that for ease of backup), you will need to run this first:
 

@@ -15,7 +15,7 @@ set cursorline
 set encoding=utf-8
 set number
 set nowrap
-let mapleader = "\<Space>" 
+let mapleader = "," 
 set nobackup
 set nowritebackup
 set noswapfile
@@ -46,7 +46,8 @@ set hlsearch
 map <leader>nh :nohlsearch<CR>
 
 " colors
-let base16colorspace=256
+let base16colorspace=256 "Access colors present in 256 colorspace
+set t_Co=256 "256 color mode
 set background=dark
 colorscheme base16-ocean
 

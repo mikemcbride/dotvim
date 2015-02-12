@@ -95,6 +95,7 @@ cno jj <c-c>
 vno v <esc>
 nnoremap <silent> <leader>z :bp<CR>
 nnoremap <silent> <leader>x :bn<CR>
+nnoremap <silent> <leader>db :bp\|bd #<CR>
 
 "Ignoring things, primarily for the sake of ctrl P, might not be valid for your use case
 set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*,*/releases/*,*/dist/*

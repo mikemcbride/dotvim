@@ -47,6 +47,8 @@ set hlsearch
 map <leader>ch :nohlsearch<CR>
 
 " colors
+let base16colorspace=256
+set t_Co=256
 set background=dark
 colorscheme base16-ocean
 
@@ -85,6 +87,10 @@ map <leader>+ <C-W>+
 map <leader>< <C-W><
 map <leader>> <C-W>>
 map <S-Tab> :bn<CR>
+map <leader>v+ :vertical resize +10
+map <leader>v- :vertical resize -10
+map <leader>h+ :resize +10
+map <leader>h- :resize -10
 
 " moving up and down the page easily
 map <leader>d Lzt

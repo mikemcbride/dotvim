@@ -43,7 +43,8 @@ set nostartofline
 
 " highlight search results
 set hlsearch
-map <leader>nh :nohlsearch<CR>
+" clear line highlighting - "clear highlights"
+map <leader>ch :nohlsearch<CR>
 
 " colors
 set background=dark

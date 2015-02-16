@@ -87,10 +87,10 @@ map <leader>+ <C-W>+
 map <leader>< <C-W><
 map <leader>> <C-W>>
 map <S-Tab> :bn<CR>
-map <leader>v+ :vertical resize +10
-map <leader>v- :vertical resize -10
-map <leader>h+ :resize +10
-map <leader>h- :resize -10
+map <leader>v+ :vertical resize +10<CR>
+map <leader>v- :vertical resize -10<CR>
+map <leader>h+ :resize +10<CR>
+map <leader>h- :resize -10<CR>
 
 " moving up and down the page easily
 map <leader>d Lzt

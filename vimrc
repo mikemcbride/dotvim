@@ -45,6 +45,9 @@ set nostartofline
 set hlsearch
 " clear line highlighting - "clear highlights"
 map <leader>ch :nohlsearch<CR>
+" shortcuts for quitting and saving
+map <leader>q :q<CR>
+map <leader>wq :wq <CR>
 
 " colors
 let base16colorspace=256

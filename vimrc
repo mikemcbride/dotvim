@@ -112,6 +112,10 @@ set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_componen
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
+" vim-airline settings
+"let g:airline_powerline_fonts = 1
+let g:airline_theme='base16'
+
 " Set minimum syntax keyword length.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags

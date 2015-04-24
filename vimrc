@@ -95,10 +95,6 @@ map <leader>v- :vertical resize -10<CR>
 map <leader>h+ :resize +10<CR>
 map <leader>h- :resize -10<CR>
 
-" moving up and down the page easily
-map <leader>d Lzt
-map <leader>u Hzb
-
 imap jj <esc>
 ino jj <esc>
 cno jj <c-c>

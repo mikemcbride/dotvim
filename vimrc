@@ -51,6 +51,7 @@ map <leader>wq :wq <CR>
 
 " colors
 set background=dark
+colorscheme base16-ocean
 
 " let braces auto close and auto format
 inoremap {<CR> {<CR>}<Esc>ko

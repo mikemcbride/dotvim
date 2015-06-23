@@ -51,7 +51,6 @@ map <leader>wq :wq <CR>
 
 " colors
 set background=dark
-colorscheme base16-ocean
 
 " let braces auto close and auto format
 inoremap {<CR> {<CR>}<Esc>ko
@@ -105,10 +104,6 @@ nnoremap <silent> <leader>db :bp\|bd #<CR>
 set wildignore+=*.iml,*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*/bower_components/*,*/built/*,*.class,*/target/*,*/out/*,*/components/*,*/public/*,*/releases/*,*/dist/*
 
 inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
-
-" vim-airline settings
-"let g:airline_powerline_fonts = 1
-let g:airline_theme='base16'
 
 " Set minimum syntax keyword length.
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS

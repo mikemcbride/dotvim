@@ -15,7 +15,7 @@ set cursorline
 set encoding=utf-8
 set number
 set nowrap
-let mapleader = "," 
+let mapleader = ","
 set nobackup
 set nowritebackup
 set noswapfile
@@ -50,8 +50,9 @@ map <leader>q :q<CR>
 map <leader>wq :wq <CR>
 
 " colors
+let g:hybrid_use_Xresources = 1
 set background=dark
-colorscheme base16-ocean
+colorscheme hybrid
 
 " let braces auto close and auto format
 inoremap {<CR> {<CR>}<Esc>ko
@@ -68,7 +69,7 @@ au BufEnter *.sass set nocindent
 au BufLeave *.sass set cindent
 au BufEnter *.less set nocindent
 au BufLeave *.less set cindent
- 
+
 autocmd BufNewFile,BufRead *.scss set ft=scss.css "Sets filetype of scss to be css. Helps with plugins.
 autocmd BufNewFile,BufRead *.less set ft=less.css "Sets filetype of less to be css. Helps with plugins.
 

@@ -5,13 +5,13 @@ silent! execute pathogen#infect("~/.vim/bundle/{}")
 
 syntax enable
 filetype plugin indent on
+set linespace=4
 set nocompatible
 set mousehide
 set laststatus=1
 set ttimeout
 set ttimeoutlen=50
 set ruler
-set cursorline
 set encoding=utf-8
 set number
 set nowrap
@@ -49,10 +49,9 @@ map <leader>ch :nohlsearch<CR>
 map <leader>q :q<CR>
 map <leader>wq :wq <CR>
 
-" " colors
-" let g:hybrid_use_Xresources = 1
-" set background=dark
-" colorscheme hornet
+" colors
+let g:hybrid_use_Xresources = 1
+set background=dark
 
 " let braces auto close and auto format
 inoremap {<CR> {<CR>}<Esc>ko

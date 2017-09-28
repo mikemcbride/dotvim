@@ -52,6 +52,7 @@ map <leader>wq :wq <CR>
 " colors
 let g:hybrid_use_Xresources = 1
 set background=dark
+colorscheme hybrid
 
 " let braces auto close and auto format
 inoremap {<CR> {<CR>}<Esc>ko

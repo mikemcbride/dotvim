@@ -1,5 +1,5 @@
 if filereadable(expand('~/src/vim/bundle/vim-pathogen/autoload/pathogen.vim'))
-  source ~/src/vim/bundle/vim-pathogen/autoload/pathogen.vim
+  source ~/src/dotvim/bundle/vim-pathogen/autoload/pathogen.vim
 endif
 silent! execute pathogen#infect("~/.vim/bundle/{}")
 

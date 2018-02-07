@@ -1,9 +1,11 @@
 if filereadable(expand('~/src/vim/bundle/vim-pathogen/autoload/pathogen.vim'))
   source ~/src/dotvim/bundle/vim-pathogen/autoload/pathogen.vim
 endif
-silent! execute pathogen#infect("~/.vim/bundle/{}")
+
+execute pathogen#infect()
 
 syntax enable
+syntax on
 filetype plugin indent on
 set linespace=4
 set nocompatible

@@ -56,6 +56,9 @@ let g:hybrid_use_Xresources = 1
 set background=dark
 colorscheme hybrid
 
+" disable checking for preprocessors in .vue files
+let g:vue_disable_pre_processors=1
+
 " let braces auto close and auto format
 inoremap {<CR> {<CR>}<Esc>ko
 
@@ -66,3 +69,6 @@ imap jj <esc>
 ino jj <esc>
 cno jj <c-c>
 vno v <esc>
+
+" fix issues with Vue file syntax highlighting
+autocmd FileType vue syntax sync fromstart

@@ -65,9 +65,6 @@ inoremap {<CR> {<CR>}<Esc>ko
 " insert new line in normal mode without going into insert mode
 nnoremap <CR> o<Esc>
 
-imap jj <esc>
-ino jj <esc>
-cno jj <c-c>
 vno v <esc>
 
 " fix issues with Vue file syntax highlighting

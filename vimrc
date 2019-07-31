@@ -69,3 +69,10 @@ vno v <esc>
 
 " fix issues with Vue file syntax highlighting
 autocmd FileType vue syntax sync fromstart
+
+xnoremap @ :<C-u>call ExecuteMacroOverVisualRange()<CR>
+
+function! ExecuteMacroOverVisualRange()
+  echo "@".getcmdline()
+  execute ":'<,'>normal @".nr2char(getchar())
+endfunction

@@ -18,3 +18,6 @@
 	path = bundle/supertab
 	url = https://github.com/ervandew/supertab.git
   ignore = dirty
+[submodule "bundle/vim-svelte"]
+	path = bundle/vim-svelte
+	url = https://github.com/evanleck/vim-svelte.git

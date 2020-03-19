@@ -16,7 +16,7 @@ To install, run these:
 
 ```
 cd ~
-git clone http://github.com/mmcbride1007/dotvim.git .vim
+git clone http://github.com/mikemcbride/dotvim.git .vim
 ln -s ~/.vim/vimrc ~/.vimrc
 cd ~/.vim
 git submodule init

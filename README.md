@@ -32,13 +32,17 @@ git submodule add http://github.com/tpope/vim-fugitive.git bundle/vim-fugitive
 git add .
 git commit -m 'Adds vim-fugitive as submodule'
 ```
+
 ## Upgrading
 
-Since all plugins are brought in via git submodules, it is super easy to upgrade. Simply run this:
+Since all plugins are brought in via git submodules, it is super easy to upgrade. Run this command from the root of this project:
 
-`git submodule foreach git pull origin master`
+```
+git submodule foreach git pull origin master
+```
 
 ## Removing plugins
+
 ```
 cd ~/.vim
 git rm --cached bundle/"module name"

@@ -52,9 +52,9 @@ map <leader>q :q<CR>
 map <leader>wq :wq <CR>
 
 " colors
-let g:hybrid_custom_term_colors = 1
-set background=dark
-colorscheme hybrid
+set termguicolors
+let ayucolor="light"
+colorscheme ayu
 
 " disable checking for preprocessors in .vue files
 let g:vue_disable_pre_processors=1

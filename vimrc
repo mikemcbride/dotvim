@@ -53,8 +53,8 @@ map <leader>wq :wq <CR>
 
 " colors
 set termguicolors
-let ayucolor="light"
-colorscheme ayu
+let mikecolor="dark"
+colorscheme mike
 
 " disable checking for preprocessors in .vue files
 let g:vue_disable_pre_processors=1

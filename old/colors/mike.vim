@@ -15,7 +15,7 @@ let g:colors_name = "mike"
 
 let s:palette = {}
 
-let s:palette.bg        = {'dark': "#1d232f",  'light': "#f7fafc"}
+let s:palette.bg        = {'dark': "#202836",  'light': "#f7fafc"}
 
 let s:palette.comment   = {'dark': "#506686",  'light': "#a8b3bd"}
 let s:palette.markup    = {'dark': "#ff5874",  'light': "#ef4444"}

@@ -4,49 +4,33 @@ These are my .vim files. I like them. You can use them if you want to.
 
 ## Installation
 
-This needs to be setup in your home directory, and a symlink needs to be made to make .vimrc point to the vimrc file inside of .vim
+This project uses neovim, so if you don't have that installed already go get it first.
 
-I use git submodules to manage packages and pull them in using [pathogen.vim](http://github.com/tpope/vim-pathogen)
+Neovim expects your config files to live inside of `~/.config/nvim`, so we'll be creating a symlink from the `nvim` folder in this project to that location on our local machines.
 
-If you already have a .vimrc but you want to symlink it (I recommend that for ease of backup), you will need to run this first:
+First, clone the repo:
 
-`mv ~/.vimrc ~/.vim/vimrc`
-
-To install, run these:
-
+```sh
+git clone https://github.com/mikemcbride/dotvim
 ```
-cd ~
-git clone http://github.com/mikemcbride/dotvim.git .vim
-ln -s ~/.vim/vimrc ~/.vimrc
-cd ~/.vim
-git submodule init
-git submodule update
+
+Next, symlink the `nvim` folder to `~/.config`. If you don't have a `~/.config` folder yet, do that first:
+
+```sh
+mkdir ~/.config
+ln -s /path/to/project/dotvim/nvim ~/.config/nvim
 ```
+
+That's it! Since neovim expects the config to be there, the next time you open a file all the config should be there. You might want to open `init.lua` and run `:PackerInstall` to make sure everything installs the first time.
 
 ## Adding plugins
 
-Plugins are managed as git submodules and pulled in using pathogen. To add a plugin (using vim-fugitive as example)
+Plugins are managed using Packer and are all in the `nvim/lua/user/plugins.lua` file. You can add anything you want in there.
 
-```
-git submodule add http://github.com/tpope/vim-fugitive.git bundle/vim-fugitive
-git add .
-git commit -m 'Adds vim-fugitive as submodule'
-```
+## Updating
 
-## Upgrading
-
-Since all plugins are brought in via git submodules, it is super easy to upgrade. Run this command from the root of this project:
-
-```
-git submodule foreach git pull origin master
-```
+This project is set up to automatically check for updates to plugins anytime you make a change to the plugins file, but if you need to check for updates you can run `:PackerUpdate` anytime you're editing a file in nvim (doesn't have to be in this project).
 
 ## Removing plugins
 
-```
-cd ~/.vim
-git rm --cached bundle/"module name"
-rm -rf bundle/"module name"
-git commit -am "Removing module X"
-git push
-```
+Remove the plugin from `plugins.lua` and save the file. Nvim will ask you if you want to delete the plugin files.

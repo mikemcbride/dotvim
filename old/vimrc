@@ -66,7 +66,7 @@ inoremap {<CR> {<CR>}<Esc>ko
 nnoremap <CR> o<Esc>
 
 " remap p to put contents on new line instead of current
-:nmap p :pu<CR>
+" ":nmap p :pu<CR>
 
 vno v <esc>
 

@@ -189,11 +189,6 @@ _G.packer_plugins = {
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
     url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
   },
-  ["nvim-web-devicons"] = {
-    loaded = true,
-    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
-    url = "https://github.com/kyazdani42/nvim-web-devicons"
-  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -219,15 +214,20 @@ _G.packer_plugins = {
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
-  ["toggleterm.nvim"] = {
-    loaded = true,
-    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
-    url = "https://github.com/akinsho/toggleterm.nvim"
-  },
   ["vim-bbye"] = {
     loaded = true,
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/vim-bbye",
     url = "https://github.com/moll/vim-bbye"
+  },
+  ["vim-be-good"] = {
+    loaded = true,
+    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/vim-be-good",
+    url = "https://github.com/ThePrimeagen/vim-be-good"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/vim-fugitive",
+    url = "https://github.com/tpope/vim-fugitive"
   },
   ["which-key.nvim"] = {
     loaded = true,

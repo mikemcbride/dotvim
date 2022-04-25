@@ -41,6 +41,9 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Close buffers
+-- I'm not sure how I feel yet about using w since that's "write", but
+-- in VS Code and web browsers we use command+w to close a tab so it
+-- feels fairly natural...
 keymap("n", "<leader>w", ":Bdelete<cr>", opts) -- close current buffer. won't quit neovim if it's the only open buffer.
 keymap("n", "<leader>W", ":bufdo :Bdelete<cr>", opts) -- close all open buffers, but don't quit neovim.
 

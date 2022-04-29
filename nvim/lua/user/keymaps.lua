@@ -5,9 +5,10 @@ local term_opts = { silent = true }
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
---Remap comma as leader key
-vim.g.mapleader = ","
-vim.g.maplocalleader = "\\"
+--Remap space as leader key
+keymap("", "<Space>", "<Nop>", opts)
+vim.g.mapleader = " "
+vim.g.maplocalleader = " "
 
 -- Modes
 --   normal_mode = "n",
@@ -18,17 +19,23 @@ vim.g.maplocalleader = "\\"
 --   command_mode = "c",
 
 -- Normal --
--- Better window navigation
+-- Better window navigation. Control + hjkl to move between splits
 keymap("n", "<C-h>", "<C-w>h", opts)
 keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Toggle nvim-tree
-keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
+-- Toggle explore panel
+keymap("n", "<leader>e", ":Ex<cr>", opts)
 
 -- Clear highlight search results
 keymap("n", "<leader>ch", ":nohlsearch<cr>", opts)
+
+-- move lines
+keymap('n', '˙', ":MoveHChar(-1)<CR>", opts)  -- Alt-h
+keymap('n', '∆', ":MoveLine(1)<CR>", opts)    -- Alt-j
+keymap('n', '¬', ":MoveHChar(1)<CR>", opts)   -- Alt-l
+keymap('n', '˚', ":MoveLine(-1)<CR>", opts)   -- Alt-k
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize +5<CR>", opts)
@@ -41,9 +48,6 @@ keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
 
 -- Close buffers
--- I'm not sure how I feel yet about using w since that's "write", but
--- in VS Code and web browsers we use command+w to close a tab so it
--- feels fairly natural...
 keymap("n", "<leader>w", ":Bdelete<cr>", opts) -- close current buffer. won't quit neovim if it's the only open buffer.
 keymap("n", "<leader>W", ":bufdo :Bdelete<cr>", opts) -- close all open buffers, but don't quit neovim.
 
@@ -55,9 +59,10 @@ keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
 
 -- Move text up and down
-keymap("v", "<A-j>", ":m .+1<CR>==", opts)
-keymap("v", "<A-k>", ":m .-2<CR>==", opts)
-keymap("v", "p", '"_dP', opts)
+keymap('v', '˙', ":MoveHBlock(-1)<CR>", opts) -- Alt-h
+keymap('v', '∆', ":MoveBlock(1)<CR>", opts)   -- Alt-j
+keymap('v', '˚', ":MoveBlock(-1)<CR>", opts)  -- Alt-k
+keymap('v', '¬', ":MoveHBlock(1)<CR>", opts)  -- Alt-l
 
 -- Visual Block --
 -- Move text up and down

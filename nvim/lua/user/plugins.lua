@@ -46,21 +46,27 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
   use "windwp/nvim-autopairs" -- Autopairs, integrates with both cmp and treesitter
   use "numToStr/Comment.nvim"
-  use "kyazdani42/nvim-tree.lua"
+  -- use "kyazdani42/nvim-tree.lua"
+  use "ryanoasis/vim-devicons"
+  use "kyazdani42/nvim-web-devicons"
   use "akinsho/bufferline.nvim"
   use "moll/vim-bbye"
   use "nvim-lualine/lualine.nvim"
-  use "ahmedkhalf/project.nvim"
+  use "akinsho/toggleterm.nvim"
+  -- use "ahmedkhalf/project.nvim"
   use "lewis6991/impatient.nvim"
   use "goolord/alpha-nvim"
   use "antoinemadec/FixCursorHold.nvim" -- This is needed to fix lsp doc highlight
   use "folke/which-key.nvim"
   use "tpope/vim-fugitive"
+  use 'fedepujol/move.nvim'
 
   -- game to practice vim
   use "ThePrimeagen/vim-be-good"
 
   -- Colorschemes
+  use "gruvbox-community/gruvbox"
+  use "sainnhe/everforest"
   use "mikemcbride/electron-highlighter.nvim"
 
   -- cmp plugins

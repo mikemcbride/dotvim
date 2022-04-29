@@ -124,6 +124,11 @@ _G.packer_plugins = {
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/electron-highlighter.nvim",
     url = "https://github.com/mikemcbride/electron-highlighter.nvim"
   },
+  everforest = {
+    loaded = true,
+    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/everforest",
+    url = "https://github.com/sainnhe/everforest"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -134,6 +139,11 @@ _G.packer_plugins = {
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  gruvbox = {
+    loaded = true,
+    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/gruvbox",
+    url = "https://github.com/gruvbox-community/gruvbox"
+  },
   ["impatient.nvim"] = {
     loaded = true,
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/impatient.nvim",
@@ -143,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/lualine.nvim",
     url = "https://github.com/nvim-lualine/lualine.nvim"
+  },
+  ["move.nvim"] = {
+    loaded = true,
+    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/move.nvim",
+    url = "https://github.com/fedepujol/move.nvim"
   },
   ["nlsp-settings.nvim"] = {
     loaded = true,
@@ -174,11 +189,6 @@ _G.packer_plugins = {
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
   },
-  ["nvim-tree.lua"] = {
-    loaded = true,
-    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
-    url = "https://github.com/kyazdani42/nvim-tree.lua"
-  },
   ["nvim-treesitter"] = {
     loaded = true,
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
@@ -188,6 +198,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
     url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
+  },
+  ["nvim-web-devicons"] = {
+    loaded = true,
+    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
+    url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -204,15 +219,15 @@ _G.packer_plugins = {
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/popup.nvim",
     url = "https://github.com/nvim-lua/popup.nvim"
   },
-  ["project.nvim"] = {
-    loaded = true,
-    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/project.nvim",
-    url = "https://github.com/ahmedkhalf/project.nvim"
-  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
   },
   ["vim-bbye"] = {
     loaded = true,
@@ -223,6 +238,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/vim-be-good",
     url = "https://github.com/ThePrimeagen/vim-be-good"
+  },
+  ["vim-devicons"] = {
+    loaded = true,
+    path = "/Users/mcbridem/.local/share/nvim/site/pack/packer/start/vim-devicons",
+    url = "https://github.com/ryanoasis/vim-devicons"
   },
   ["vim-fugitive"] = {
     loaded = true,

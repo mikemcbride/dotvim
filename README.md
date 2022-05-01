@@ -1,3 +1,5 @@
+⚠️ I've moved my vim config into my [dotfiles repo](https://github.com/mikemcbride/dotfiles). ⚠️
+
 # dotvim
 
 These are my .vim files. I like them. You can use them if you want to.
